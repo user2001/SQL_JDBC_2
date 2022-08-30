@@ -1,8 +1,11 @@
 package org.example;
 
 public class Person {
-    private int person_id, age;
-    private String name, surname, email;
+    private int person_id;
+    private int age;
+    private String name;
+    private String surname;
+    private String email;
     private int book_credit;
 
     public void setPerson_id(int person_id) {
