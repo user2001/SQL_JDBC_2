@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1695a36-cfa0-49e1-bd28-2b73bf7b8ecd" name="Changes" comment="Task was done, five selects in five methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b1695a36-cfa0-49e1-bd28-2b73bf7b8ecd" name="Changes" comment="exception fixed">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConnectionManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +81,7 @@
       <workItem from="1660820333781" duration="642000" />
       <workItem from="1661883907632" duration="5127000" />
       <workItem from="1661941480914" duration="146000" />
-      <workItem from="1661941646977" duration="2018000" />
+      <workItem from="1661941646977" duration="2816000" />
     </task>
     <task id="LOCAL-00001" summary="Task was done, five selects in five methods">
       <created>1660488820182</created>
@@ -105,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661942445963</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="exception fixed">
+      <created>1661944353886</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661944353886</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Task was done, five selects in five methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task was done, five selects in five methods" />
+    <MESSAGE value="exception fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="exception fixed" />
   </component>
 </project>
