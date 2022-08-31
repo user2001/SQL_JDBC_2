@@ -20,8 +20,8 @@ public class ManagerImpl implements Manager {
             Statement statement = ConnectionManager.connection.createStatement();
             ResultSet resultSet = statement.executeQuery(SQL_SELECT);
             setPersonInfo(resultSet);
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        } catch (SQLException exception) {
+            exception.printStackTrace();
         }
         System.out.println("------------------------------------");
     }
@@ -71,9 +71,8 @@ public class ManagerImpl implements Manager {
             preparedStatement.setString(1, "Backman Frederik");
             ResultSet resultSet = preparedStatement.executeQuery();
             setBookInfo(resultSet);
-        } catch (
-                SQLException e) {
-            throw new RuntimeException(e);
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         System.out.println("------------------------------------");
     }
@@ -91,32 +90,39 @@ public class ManagerImpl implements Manager {
             preparedStatement.close();
             ConnectionManager.connection.close();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 
-    public void setPersonInfo(ResultSet resultSet) throws SQLException {
-        while (resultSet.next()) {
-            Person person = new Person();
-            person.setName(resultSet.getString("name"));
-            person.setAge(resultSet.getInt("age"));
-            person.setSurname(resultSet.getString("surname"));
-            person.setEmail(resultSet.getString("email"));
-            person.setPerson_id(resultSet.getInt("person_id"));
-            person.setBook_credit(resultSet.getInt("book_credit"));
-            System.out.println(person);
+    public void setPersonInfo(ResultSet resultSet) {
+        try {
+            while (resultSet.next()) {
+                Person person = new Person();
+                person.setName(resultSet.getString("name"));
+                person.setAge(resultSet.getInt("age"));
+                person.setSurname(resultSet.getString("surname"));
+                person.setEmail(resultSet.getString("email"));
+                person.setPerson_id(resultSet.getInt("person_id"));
+                person.setBook_credit(resultSet.getInt("book_credit"));
+                System.out.println(person);
+            }
+        } catch (SQLException exception) {
+            exception.printStackTrace();
         }
     }
 
-    public void setBookInfo(ResultSet resultSet) throws SQLException {
-        while (resultSet.next()) {
-            Book book = new Book();
-            book.setBook_id(resultSet.getInt("book_id"));
-            book.setTitle(resultSet.getString("title"));
-            book.setAuthor(resultSet.getString("author"));
-            book.setAmount(resultSet.getInt("amount"));
-            System.out.println(book);
+    public void setBookInfo(ResultSet resultSet) {
+        try {
+            while (resultSet.next()) {
+                Book book = new Book();
+                book.setBook_id(resultSet.getInt("book_id"));
+                book.setTitle(resultSet.getString("title"));
+                book.setAuthor(resultSet.getString("author"));
+                book.setAmount(resultSet.getInt("amount"));
+                System.out.println(book);
+            }
+        } catch (SQLException exception) {
+            exception.printStackTrace();
         }
     }
-
 }
