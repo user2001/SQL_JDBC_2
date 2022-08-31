@@ -20,6 +20,8 @@ public class ManagerImpl implements Manager {
             Statement statement = ConnectionManager.connection.createStatement();
             ResultSet resultSet = statement.executeQuery(SQL_SELECT);
             setPersonInfo(resultSet);
+            resultSet.close();
+            ConnectionManager.connection.close();
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
@@ -34,6 +36,8 @@ public class ManagerImpl implements Manager {
             Statement statement = ConnectionManager.connection.createStatement();
             ResultSet resultSet = statement.executeQuery(SQL_SELECT_WHERE_AMOUNT);
             setBookInfo(resultSet);
+            resultSet.close();
+            ConnectionManager.connection.close();
         } catch (SQLException exc) {
             exc.printStackTrace();
         }
@@ -56,6 +60,8 @@ public class ManagerImpl implements Manager {
                 String author = resultSet.getString("author");
                 System.out.println(person_id + " " + name + " " + " " + surname + " reads " + title + " written by " + author);
             }
+            resultSet.close();
+            ConnectionManager.connection.close();
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
@@ -71,6 +77,9 @@ public class ManagerImpl implements Manager {
             preparedStatement.setString(1, "Backman Frederik");
             ResultSet resultSet = preparedStatement.executeQuery();
             setBookInfo(resultSet);
+            resultSet.close();
+            preparedStatement.close();
+            ConnectionManager.connection.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }

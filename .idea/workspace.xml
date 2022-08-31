@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1695a36-cfa0-49e1-bd28-2b73bf7b8ecd" name="Changes" comment="exception fixed">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ManagerImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,7 @@
       <workItem from="1660820333781" duration="642000" />
       <workItem from="1661883907632" duration="5127000" />
       <workItem from="1661941480914" duration="146000" />
-      <workItem from="1661941646977" duration="2816000" />
+      <workItem from="1661941646977" duration="3916000" />
     </task>
     <task id="LOCAL-00001" summary="Task was done, five selects in five methods">
       <created>1660488820182</created>
@@ -111,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661944353886</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="exception fixed">
+      <created>1661945404688</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661945404688</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
